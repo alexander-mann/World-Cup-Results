@@ -14,7 +14,6 @@ class Fixtures extends Component {
         // get World Cup fixtures (not completed)
         const authStr = "68b65c34e4d34ab8b033da0c58296748";
         axios.get("http://api.football-data.org/v1/competitions/467/fixtures", { headers: { "X-Auth-Token": authStr } }).then((res) => {
-            console.log(res.data.fixtures);
             this.setState({
                 fixtures: res.data.fixtures
             });
@@ -33,8 +32,8 @@ class Fixtures extends Component {
                             let date = moment(fixture.date).format("MMMM Do");
                             fixture.date = date;
                             return (
-                                <div className="col-md-12" id="result-back" key={fixture._links.self.href}>
-                                    <div className="col-md-5" id="result">
+                                <div className="col-md-12" id="result-back">
+                                    <div className="col-md-5" id="result" key={fixture._links.self.href}>
                                         {/* row 1 */}
                                         <div className="row" id="row1">
                                             <div className="col-md-4">

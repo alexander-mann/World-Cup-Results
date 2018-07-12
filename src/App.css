@@ -9,6 +9,24 @@ html, #root{
   text-align: center;
 }
 
+#active{
+  background-color: transparent;
+  outline: black;
+}
+
+.btn:disabled{
+  border: 1px solid #d8cb51;
+}
+
+.btn:disabled:hover{
+  color: transparent !important;
+}
+
+.btn:focus, .btn:active, .btn:hover{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .pull-right{
   text-align: right;
 }

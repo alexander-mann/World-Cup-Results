@@ -26,15 +26,14 @@ class Results extends Component {
             <div>
                 {
                     this.state.results.reverse().map(function (result) {
-                        var section = 0;
                         if (result.status === "FINISHED") {
                             let time = moment(result.date).format("h:mm A");
                             result.time = time;
                             let date = moment(result.date).format("MMMM Do");
                             result.date = date;
                             return (
-                                <div className="col-md-12" id="result-back" key={result._links.self.href}>
-                                    <div className="col-md-5" id="result">
+                                <div className="col-md-12" id="result-back" >
+                                    <div className="col-md-5" id="result" key={result._links.self.href}>
                                         {/* row 1 */}
                                         <div className="row" id="row1">
                                             <div className="col-md-4">
