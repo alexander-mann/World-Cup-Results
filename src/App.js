@@ -16,10 +16,10 @@ class App extends Component {
         <div className="col-md-12" id="app-body">
           <Switch>
             <Route exact path='/' render={() => (
-              <Fixtures />
-            )} />
-            <Route exact path='/results' render={() => (
               <Results />
+            )} />
+            <Route exact path='/fixtures' render={() => (
+              <Fixtures />
             )} />
             <Route exact path='/groups' render={() => (
               <Groups />

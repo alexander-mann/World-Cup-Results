@@ -83,7 +83,7 @@ class Fixtures extends Component {
                                             <div className="col-md-4">
                                                 {
                                                     (() => {
-                                                        if(fixture.result.goalsHomeTeam != null) {
+                                                        if (fixture.result.goalsHomeTeam != null) {
                                                             return (
                                                                 <p>ONGOING</p>
                                                             )
@@ -104,6 +104,7 @@ class Fixtures extends Component {
                 }
             </div>
         );
+
     }
 }
 

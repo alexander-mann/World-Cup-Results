@@ -8,8 +8,8 @@ class NavBar extends Component {
         return (
             <header className="col-md-12" >
                 <h1 id="title">FIFA WORLD CUP 2018</h1>
-                <NavBtn to='/' text='FIXTURES' route={this.props.location.pathname}/>
-                <NavBtn to='/results' text='RESULTS' route={this.props.location.pathname}/>
+                <NavBtn to='/fixtures' text='FIXTURES' route={this.props.location.pathname}/>
+                <NavBtn to='/' text='RESULTS' route={this.props.location.pathname}/>
                 <NavBtn to='/groups' text='GROUPS' route={this.props.location.pathname}/>
             </header>
         );
